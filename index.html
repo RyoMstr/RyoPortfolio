@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Transparent Navbar -->
+  <header>
+    <div class="logo">Ryo<span>Dev</span></div>
+    <nav>
+      <a href="#hero" data-scroll>Home</a>
+      <a href="#about" data-scroll>About</a>
+      <a href="#skills" data-scroll>Skills</a>
+      <a href="#contact" data-scroll>Contact</a>
+      <a href="ROY RESUME-FIN (1).pdf" class="cv-btn" target="_blank">Download CV</a>
+    </nav>
+    <div id="menuBtn">☰</div>
+  </header>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Landing Hero -->
+  <!-- Landing Hero -->
+  <section id="hero" class="hero" data-animate>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Ryo</span></h1>
+        <p>Futuristic Web Developer & Designer</p>
+      </div>
+      <div class="hero-img">
+        <img src="profile (2).png" alt="Profile Photo" id="profileImg">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about" data-animate>
+    <h2>About Me</h2>
+    <p>Hello! I'm currently a 2nd-year Information Systems student who’s passionate about technology, coding, and
+      creating digital experiences that actually make life easier (and a bit more fun). I love exploring web
+      development, interactive interfaces, and futuristic designs—basically anything that lets me combine logic with
+      creativity.</p>
+    <p>When I’m not buried in code or tackling assignments, I enjoy experimenting with new tech ideas, discovering cool
+      UI/UX trends, and occasionally geeking out over anime and gaming. I like keeping things casual —I believe
+      learning should be exciting, and a bit of humor goes a long way, even in the world of systems and code.</p>
+
+    <p>I’m always looking for opportunities to improve my skills, collaborate on interesting projects, and bring
+      creative tech ideas to life.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills" data-animate>
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="holo-card" data-animate>
+        <img src="html.png" alt="HTML">
+        <h3>HTML</h3>
+      </div>
+      <div class="holo-card" data-animate>
+        <img src="CSS.png" alt="CSS">
+        <h3>CSS</h3>
+      </div>
+      <div class="holo-card" data-animate>
+        <img src="java-script.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="holo-card" data-animate>
+        <img src="visual-studio.png" alt="VS Code">
+        <h3>VS Code</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects" data-animate>
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card holo-card" data-animate>
+        <img src="Astronomy.png" alt="Project 1">
+        <h3>Astronomy Web</h3>
+        <p>An interactive digital planetarium where users can explore planets, stars, and constellations in a fun and easy-to-understand way.</p> 
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card holo-card" data-animate>
+        <img src="School.jpg" alt="Project 2">
+        <h3>School Web</h3>
+        <p>A clean and responsive school website designed to showcase programs, announcements, and activities with modern navigation.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-animate>
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+      <button type="button" id="resetBtn">Reset</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> RyoDev. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
